@@ -194,13 +194,13 @@ public:
     for (int t = 0; t < nt; ++t) {
       advance();
       if (output_interval > 0 && t % output_interval == 0) {
-        output_image(t);
+        output(t);
       }
     }
   }
 
   // This is for you!
-  void output_image(int timestep)
+  void output(int timestep)
   {
     return;
   }
